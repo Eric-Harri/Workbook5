@@ -18,3 +18,9 @@ let findMMs =
     products.filter((product) => product.product.indexOf("M&Ms") >= 0)
 
 console.log(findMMs);
+
+let findSwedishFish = products.filter(
+  (product) => product.product.indexOf("Swedish Fish") >= 0
+);
+
+console.log(findSwedishFish.length !== 0);
