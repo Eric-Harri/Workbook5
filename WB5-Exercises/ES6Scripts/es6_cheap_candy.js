@@ -13,3 +13,8 @@ let oneCheapCandy =
     products.filter((product) => product.price < 4)
 
 console.log(oneCheapCandy);
+
+let findMMs =
+    products.filter((product) => product.product.indexOf("M&Ms") >= 0)
+
+console.log(findMMs);
