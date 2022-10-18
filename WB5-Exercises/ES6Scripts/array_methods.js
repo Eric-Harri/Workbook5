@@ -9,13 +9,24 @@ let cart = [
 ];
 
 function getItemName(item) {
-    return item.item; 
+  return item.item;
 }
 
 function displayName(itemName) {
-    console.log(itemName);
+  console.log(itemName);
 }
 
-let itemNames = cart.map(getItemName)
 
-itemNames.forEach(displayName)
+
+let itemNames = cart.map(getItemName);
+itemNames.sort();
+
+itemNames.forEach(displayName);
+
+function addCartItem(currentTotal, cartItem) {
+  return currentTotal + cartItem.price * cartItem.quantity;
+}
+
+const total = cart.reduce(addCartItem, 0);
+console.log(total);
+
