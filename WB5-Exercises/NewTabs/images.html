@@ -6,16 +6,41 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Images</title>
+
+        <link rel="stylesheet" href="./styles/style.css">
     </head>
 
     <body>
         <a href="./index.html">Home Page</a>
 
-        <div style="display: flex; flex-direction:column;">
-            <img height="300em" width="250em" src="images/ash-v0_MCllHY9M-unsplash.jpg" alt="dog-man">
-            <img height="300em" width="250em" src="images/david-lezcano-m-Doa-GTrUw-unsplash.jpg" alt="david">
-            <img height="300em" width="250em" src="images/richard-brutyo-Sg3XwuEpybU-unsplash.jpg" alt="richard">
+        <div style="display: flex; flex-direction:row;" class="imageGroup">
+            <img class="rounded imageGroup" height="300em" width="250em" src="images/ash-v0_MCllHY9M-unsplash.jpg" alt="dog-man">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium temporibus, eligendi facilis odit
+                pariatur nobis, earum ad magni, aliquam architecto explicabo voluptate perspiciatis voluptatem beatae
+                necessitatibus asperiores obcaecati deserunt totam?
+            </p>
+
+            <img class="rounded imageGroup" height="300em" width="250em" src="images/david-lezcano-m-Doa-GTrUw-unsplash.jpg" alt="david">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam maiores neque quaerat rem officiis
+                quisquam maxime, et beatae recusandae, dolores soluta accusamus asperiores accusantium voluptas non
+                possimus hic, fugit cum!
+            </p>
+
+            <img id="dogImage" class="rounded imageGroup"  height="300em" width="250em" src="images/richard-brutyo-Sg3XwuEpybU-unsplash.jpg" alt="richard">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque, blanditiis, natus consequatur
+                illum sit voluptate dolorum perferendis rerum saepe inventore doloribus ipsum, fugit vitae expedita eius
+                praesentium laborum sunt.
+            </p>
         </div>
+
+        <button>Change Image</button>
+
+        <div >
+
+            <script src="./script/main.js"></script>
     </body>
 
 </html>

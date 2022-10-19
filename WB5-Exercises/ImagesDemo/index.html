@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>
+            <img src="" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum accusamus. In tempore repellendus
+                ratione dolores eaque. Minus nihil corrupti voluptatibus? Est beatae minima error animi molestias
+                suscipit itaque vitae.
+            </p>
+        </div>
+        <div>
+            <img src="" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum accusamus. In tempore repellendus
+                ratione dolores eaque. Minus nihil corrupti voluptatibus? Est beatae minima error animi molestias
+                suscipit itaque vitae.
+            </p>
+        </div>
+        <div>
+            <img src="" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum accusamus. In tempore repellendus
+                ratione dolores eaque. Minus nihil corrupti voluptatibus? Est beatae minima error animi molestias
+                suscipit itaque vitae.
+            </p>
+        </div>
+
+        <script>
+            window.onload = () => {
+                const paraTags = document.getElementsByTagName('p')
+
+                Array.from(paraTags).forEach((p) => {
+                    p.style.border = "1px solid black";
+                })
+
+            }
+        </script>
+    </body>
+
+</html>
