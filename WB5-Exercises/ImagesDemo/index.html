@@ -5,12 +5,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
         <div>
-            <img src="" alt="">
+            <img src="https://placekitten.com/200/200" alt="">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum accusamus. In tempore repellendus
                 ratione dolores eaque. Minus nihil corrupti voluptatibus? Est beatae minima error animi molestias
@@ -18,7 +19,7 @@
             </p>
         </div>
         <div>
-            <img src="" alt="">
+            <img src="https://placekitten.com/200/200" alt="">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum accusamus. In tempore repellendus
                 ratione dolores eaque. Minus nihil corrupti voluptatibus? Est beatae minima error animi molestias
@@ -26,7 +27,7 @@
             </p>
         </div>
         <div>
-            <img src="" alt="">
+            <img src="https://placekitten.com/200/200" alt="">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum accusamus. In tempore repellendus
                 ratione dolores eaque. Minus nihil corrupti voluptatibus? Est beatae minima error animi molestias
@@ -41,6 +42,13 @@
                 Array.from(paraTags).forEach((p) => {
                     p.style.border = "1px solid black";
                 })
+
+                const imgs = document.getElementsByTagName('img')
+
+                for (img of imgs) {
+                    img.classList.add('img-rounded')
+                    img.alt = 'cat' 
+                }
 
             }
         </script>
